@@ -13,7 +13,7 @@
             background-color: #f4f4f4;
         }
         .container {
-            width: 95%;
+            width: 80%;
             margin: auto;
             overflow: hidden;
             padding: 20px;
@@ -36,19 +36,8 @@
         .contact-info {
             font-size: 0.9em;
         }
-        .main-content {
-            display: flex;
+        .content {
             margin-top: 20px;
-        }
-        .skills-panel {
-            flex: 0 0 250px;
-            background: white;
-            padding: 20px;
-            border-radius: 5px;
-            margin-right: 20px;
-        }
-        .right-content {
-            flex: 1;
             background: white;
             padding: 20px;
             border-radius: 5px;
@@ -56,23 +45,14 @@
         .section {
             margin-bottom: 20px;
         }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
         .skill-category {
-            margin-bottom: 20px;
-        }
-        .skill-category h3 {
-            margin-bottom: 10px;
-        }
-        .skill-category ul {
-            padding-left: 20px;
-        }
-        @media (max-width: 768px) {
-            .main-content {
-                flex-direction: column;
-            }
-            .skills-panel {
-                margin-right: 0;
-                margin-bottom: 20px;
-            }
+            flex: 1;
+            min-width: 200px;
+            margin-right: 20px;
         }
     </style>
 </head>
@@ -91,113 +71,114 @@
     </header>
 
     <div class="container">
-        <div class="main-content">
-            <div class="skills-panel">
+        <div class="content">
+            <div class="section">
+                <h2>Senior Data Scientist</h2>
+                <h3>About Me</h3>
+                <p>Data Scientist/Engineer with 6+ years of experience. Proficient in developing and implementing machine learning solutions, statistical models and predictive analytics to investigate fraud on blockchain data. Skilled in Warehousing, ETLs, SQL, Python etc. Seeking to leverage my expertise and passion for end-to-end data services and research to contribute to the success of an exciting new process.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Professional Experience</h2>
+                <h3>Merkle Science Pte Ltd | Senior Data Scientist</h3>
+                <p>2019 - Present</p>
+                <ul>
+                    <li>Analyze current and past financial data to identify fraud patterns.</li>
+                    <li>Integrating proprietary data with blockchain data to build an advanced data mining engine.</li>
+                    <li>Data mining using EDA and techniques such as A/B testing and anomaly detection to identify interesting behaviour patterns on blockchain.</li>
+                    <li>Experience with building multiple warehouses to store and process data from multiple blockchains, vendors and data pipelines.</li>
+                    <li>Building multiple compliance products, based on ML and predictive analytics to predict behavioural patterns from transaction data and blockchain activity.</li>
+                    <li>Analytics and management on multiple products, optimizing user experience and integration of new features.</li>
+                </ul>
+
+                <h3>Thomson Reuters Pvt Ltd | Research Analyst</h3>
+                <p>2017 - 2019</p>
+                <ul>
+                    <li>Data mining from OSINT sources for compliance/KYC/RegTech.</li>
+                    <li>Assessing and improving Data Quality on internal product.</li>
+                    <li>Building data policies, compliant with all personal data collection regulations, and ensuring its compliance across the whole team.</li>
+                    <li>Prepared reports on the above information and reported the insights.</li>
+                    <li>Build enhanced data collection pipelines through scrapers and crawlers.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
                 <h2>Skills</h2>
-                <div class="skill-category">
-                    <h3>Machine Learning and Data Analysis</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>Pandas</li>
-                        <li>scikit-learn</li>
-                        <li>numpy</li>
-                        <li>scipy</li>
-                        <li>surprise</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>SQL &amp; Databases</h3>
-                    <ul>
-                        <li>SQL</li>
-                        <li>Clickhouse</li>
-                        <li>Bigquery</li>
-                        <li>Snowflake</li>
-                        <li>Kafka</li>
-                        <li>Neo4j</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Visualization</h3>
-                    <ul>
-                        <li>matplotlib</li>
-                        <li>Seaborn</li>
-                        <li>Tableau</li>
-                        <li>Redash</li>
-                        <li>Mixpanel</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Data Engineering</h3>
-                    <ul>
-                        <li>dbt</li>
-                        <li>Airflow</li>
-                        <li>Confluent</li>
-                        <li>Google Cloud Platforms (GCP)</li>
-                        <li>Amazon Web Services (AWS)</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Web Development</h3>
-                    <ul>
-                        <li>Flask</li>
-                        <li>FastAPI</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Problem Solving</li>
-                        <li>Critical Thinking</li>
-                        <li>Communication</li>
-                        <li>Multi-tasking</li>
-                    </ul>
+                <div class="skills">
+                    <div class="skill-category">
+                        <h3>Machine Learning and Data Analysis</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>Pandas</li>
+                            <li>scikit-learn</li>
+                            <li>numpy</li>
+                            <li>scipy</li>
+                            <li>surprise</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>SQL &amp; Databases</h3>
+                        <ul>
+                            <li>SQL</li>
+                            <li>Clickhouse</li>
+                            <li>Bigquery</li>
+                            <li>Snowflake</li>
+                            <li>Kafka</li>
+                            <li>Neo4j</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Visualization</h3>
+                        <ul>
+                            <li>matplotlib</li>
+                            <li>Seaborn</li>
+                            <li>Tableau</li>
+                            <li>Redash</li>
+                            <li>Mixpanel</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Data Engineering</h3>
+                        <ul>
+                            <li>dbt</li>
+                            <li>Airflow</li>
+                            <li>Confluent</li>
+                            <li>Google Cloud Platforms (GCP)</li>
+                            <li>Amazon Web Services (AWS)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Web Development</h3>
+                        <ul>
+                            <li>Flask</li>
+                            <li>FastAPI</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Problem Solving</li>
+                            <li>Critical Thinking</li>
+                            <li>Communication</li>
+                            <li>Multi-tasking</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="right-content">
-                <div class="section">
-                    <h2>Senior Data Scientist</h2>
-                    <h3>About Me</h3>
-                    <p>Data Scientist/Engineer with 6+ years of experience. Proficient in developing and implementing machine learning solutions, statistical models and predictive analytics to investigate fraud on blockchain data. Skilled in Warehousing, ETLs, SQL, Python etc. Seeking to leverage my expertise and passion for end-to-end data services and research to contribute to the success of an exciting new process.</p>
-                </div>
-                
-                <div class="section">
-                    <h2>Professional Experience</h2>
-                    <h3>Merkle Science Pte Ltd | Senior Data Scientist</h3>
-                    <p>2019 - Present</p>
-                    <ul>
-                        <li>Analyze current and past financial data to identify fraud patterns.</li>
-                        <li>Integrating proprietary data with blockchain data to build an advanced data mining engine.</li>
-                        <li>Data mining using EDA and techniques such as A/B testing and anomaly detection to identify interesting behaviour patterns on blockchain.</li>
-                        <li>Experience with building multiple warehouses to store and process data from multiple blockchains, vendors and data pipelines.</li>
-                        <li>Building multiple compliance products, based on ML and predictive analytics to predict behavioural patterns from transaction data and blockchain activity.</li>
-                        <li>Analytics and management on multiple products, optimizing user experience and integration of new features.</li>
-                    </ul>
-
-                    <h3>Thomson Reuters Pvt Ltd | Research Analyst</h3>
-                    <p>2017 - 2019</p>
-                    <ul>
-                        <li>Data mining from OSINT sources for compliance/KYC/RegTech.</li>
-                        <li>Assessing and improving Data Quality on internal product.</li>
-                        <li>Building data policies, compliant with all personal data collection regulations, and ensuring its compliance across the whole team.</li>
-                        <li>Prepared reports on the above information and reported the insights.</li>
-                        <li>Build enhanced data collection pipelines through scrapers and crawlers.</li>
-                    </ul>
-                </div>
-                
-                <div class="section">
-                    <h2>Education</h2>
-                    <h3>National Institute of Technology, Silchar</h3>
-                    <p>Bachelor of Technology in Electrical Engineering</p>
-                    <p>Completed in 2016</p>
-                </div>
-                
-                <div class="section">
-                    <h2>Achievements</h2>
-                    <ul>
-                        <li>Published an academic paper on 'Experimental Implementation of Fuzzy Vision‑Based Tracking Control of Quad‑Rotor' in Springer Publications</li>
-                        <li>Built multiple products, such as fraud detection models, recommendation engines etc. leveraging Data Analytics and Machine Learning.</li>
-                    </ul>
-                </div>
+            
+            <div class="section">
+                <h2>Education</h2>
+                <h3>National Institute of Technology, Silchar</h3>
+                <p>Bachelor of Technology in Electrical Engineering</p>
+                <p>Completed in 2016</p>
+            </div>
+            
+            <div class="section">
+                <h2>Achievements</h2>
+                <ul>
+                    <li>Published an academic paper on 'Experimental Implementation of Fuzzy Vision‑Based Tracking Control of Quad‑Rotor' in Springer Publications</li>
+                    <li>Built multiple products, such as fraud detection models, recommendation engines etc. leveraging Data Analytics and Machine Learning.</li>
+                </ul>
             </div>
         </div>
     </div>
